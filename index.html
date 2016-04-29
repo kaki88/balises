@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balises & Css</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="themes/github.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="rainbow.min.js"></script>
+    <script src="language/css.js"></script>
+    <script src="language/html.js"></script>
+    <script src="language/generic.js"></script>
+    <script src="language/javascript.js"></script>
+    <script src="language/php.js"></script>
+    <script src="language/ruby.js"></script>
+    <script src="js/jquery.cslide.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $("#cslide-slides").cslide();
+        });
+    </script>
+</head>
+
+
+
+
+
+<body>
+
+  
+        <div class="container">
+            <section id="cslide-slides" class="cslide-slides-master clearfix">
+                <div class="cslide-prev-next clearfix">
+                    <span class="cslide-prev">Précédant</span>
+                    <span class="cslide-next">Suivant</span>
+                </div>
+                <div class="cslide-slides-container clearfix">
+
+
+                          
+<div class="cslide-slide">
+ <h2>La propriété ANIMATION-DELAY permet de décaler le départ d’une animation, par rapport au déclenchement</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+<div class="move">
+    10 sec 
+</div>
+<div class="move move2">
+    15 sec 
+</div>
+<div class="move move3">
+    20 sec 
+</div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<div class="move">
+    10 sec 
+</div>
+<div class="move move2">
+    15 sec 
+</div>
+<div class="move move3">
+    20 sec 
+</div>
+</code></pre>
+     <br>
+    <br>
+    <h2>Code CSS</h2>
+    <pre><code data-language="css">
+.move {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s;
+    animation-name: exemple;
+    animation-delay: 10s;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.move2 {
+    animation-delay: 15s;
+}
+
+.move3 {
+    animation-delay: 20s;
+}
+
+@-webkit-keyframes exemple {
+    from {
+        background-color: beige;
+    }
+    to {
+        background-color: red;
+    }
+}
+</code></pre>
+</div>              
+                    
+                    
+<div class="cslide-slide">
+    <h2>La balise U permet de souligner le texte</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demo">
+        <u>Exemple balise U</u>
+
+    </div>
+    <br>
+    <br>
+    <h2>Apercu du code</h2>
+    <pre><code data-language="html">
+<u>Exemple balise U</u>
+</code></pre>
+</div>
+
+
+
+
+
+<div class="cslide-slide">
+    <h2>La balise WBR permet au navigateur (mais ne l'y oblige pas) d'effectuer un saut de ligne à l'endroit ou elle apparaît</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+   
+        <div class="demowbr">
+            SanslabaliseWBRSanslabaliseWBRSanslabaliseWBRSanslabaliseWBRSanslabaliseWBRSanslabaliseWBR<br>ExempledelabaliseWBR<wbr>ExempledelabaliseWBR<wbr>ExempledelabaliseWBR<wbr>ExempledelabaliseWBR
+        </div>
+   
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+SanslabaliseWBRSanslabaliseWBRSanslabaliseWBRSanslabaliseWBRSanslabaliseWBRSanslabaliseWBR<br>
+ExempledelabaliseWBR<wbr>ExempledelabaliseWBR<wbr>ExempledelabaliseWBR<wbr>ExempledelabaliseWBR
+</code></pre>
+</div>
+
+
+
+<div class="cslide-slide">
+     <h2>La balise VAR permet de désigner une variable dans un programme, la variable est affichée en italique</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demo">
+<var> E </var> énergie est égale à <var> m </var> masse multipliée par la <var> c </var> vitesse de la lumière au carré.
+    </div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<var> E </var> énergie est égale à <var> m </var> masse multipliée par la <var> c </var> vitesse de la lumière au carré.
+</code></pre>
+</div>
+
+                    
+                
+
+<div class="cslide-slide">
+       <h2>La balise RP est utilisé pour fournir ce qui fera office de parenthèse aux navigateurs qui n'offrent pas le support des annotations Ruby</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demo">
+<ruby>攻殻
+    <rp>（</rp>
+    <rt>こうかく</rt>
+    <rp>）</rp>機動隊
+    <rp>（</rp>
+    <rt>きどうたい</rt>
+    <rp>）</rp>
+</ruby>
+    </div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<ruby>攻殻
+    <rp>（</rp>
+    <rt>こうかく</rt>
+    <rp>）</rp>機動隊
+    <rp>（</rp>
+    <rt>きどうたい</rt>
+    <rp>）</rp>
+</ruby>
+</code></pre>
+</div>
+                
+
+                    
+<div class="cslide-slide">
+ <h2>La balise ADDRESS permet de définir et formater une adresse. Elle représente les informations de contact pour le document ou  les coordonnées de l’auteur/propriétaire d'un article</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demo">
+<ADDRESS>
+   Simplon epinal
+   1 Avenue du Général de Gaulle
+   88000 EPINAL 
+   Tel: 03 29 33 88 88 
+       <a href="mailto:	gfresse@simplon.co
+">Contact mail</a> 
+   </ADDRESS>
+    </div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<ADDRESS>
+   Simplon epinal
+   1 Avenue du Général de Gaulle
+   88000 EPINAL 
+   Tel: 03 29 33 88 88 
+ <a href="mailto:gfresse@simplon.co">Contact mail</a> 
+</ADDRESS>
+</code></pre>
+</div>
+
+<div class="cslide-slide">
+ <h2>La propriété MARGIN-LEFT permet de spécifier la marge extérieure gauche d'un élément</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+<div class="demomargin">
+    Exemple propriété MARGIN-LEFT à 0px
+</div>
+<div class="demomargin2">
+    Exemple propriété MARGIN-LEFT à 200px
+</div>
+<div class="demomargin3">
+    Exemple propriété MARGIN-LEFT à 400px
+</div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<div class="demomargin">
+    Exemple propriété MARGIN-LEFT à 0px
+</div>
+<div class="demomargin2">
+    Exemple propriété MARGIN-LEFT à 200px
+</div>
+<div class="demomargin3">
+    Exemple propriété MARGIN-LEFT à 400px
+</div>
+</code></pre>
+    <br>
+    <br>
+    <h2>Code CSS</h2>
+    <pre><code data-language="css">
+.demomargin {
+    margin-left: 0px;
+    border: solid 1px;
+    width: 400px;
+    background-color: beige;
+}
+
+.demomargin2 {
+    margin-left: 200px;
+    border: solid 1px;
+    width: 400px;
+    background-color: beige;
+}
+
+.demomargin3 {
+    margin-left: 400px;
+    border: solid 1px;
+    width: 400px;
+    background-color: beige;
+}
+</code></pre>
+</div>
+                
+
+<div class="cslide-slide">
+<h2>La propriété @FONT-FEATURE-VALUES permet d'utiliser un nom commun et de simplifier le CSS lors de l'utilisation de plusieurs polices</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <pre><code data-language="html">
+@font-feature-values Font One { 
+  @styleset {
+    nice-style: 12;
+  }
+}
+ 
+@font-feature-values Font Two { 
+  @styleset {
+    nice-style: 4;
+  }
+} 
+
+.nice-look { font-variant-alternates: styleset(nice-style); } 
+</code></pre>
+</div>
+         
+
+
+
+<div class="cslide-slide">
+    <h2>La propriété WIDOWS définit le nombre minimum de lignes qui peuvent être laissées en haut de la deuxième page lorsqu'un paragraphe s'étend sur deux pages, dans un média paginé</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demoi">
+<img class="wat" src="img/gne.jpg">
+    </div>
+</div>
+                
+
+
+<div class="cslide-slide">
+<h2>La propriété BORDER-COLLAPSE détermine si les bordures d'un tableau sont séparées ou fusionnées</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+<table class="separer">
+    <tr>
+        <td class="separate">SEPARATE</td>
+        <td class="separate">SEPARATE</td>
+    </tr>
+    <tr>
+        <td class="separate">SEPARATE</td>
+        <td class="separate">SEPARATE</td>
+    </tr>
+</table>
+      <BR>
+<table class="coller">
+    <tr>
+        <td class="collapse">COLLAPSE</td>
+        <td class="collapse">COLLAPSE</td>
+    </tr>
+    <tr>
+        <td class="collapse">COLLAPSE</td>
+        <td class="collapse">COLLAPSE</td>
+    </tr>
+</table> 
+<br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<table class="separer">
+    <tr>
+        <td class="separate">SEPARATE</td>
+        <td class="separate">SEPARATE</td>
+    </tr>
+    <tr>
+        <td class="separate">SEPARATE</td>
+        <td class="separate">SEPARATE</td>
+    </tr>
+</table>
+      <BR>
+<table class="coller">
+    <tr>
+        <td class="collapse">COLLAPSE</td>
+        <td class="collapse">COLLAPSE</td>
+    </tr>
+    <tr>
+        <td class="collapse">COLLAPSE</td>
+        <td class="collapse">COLLAPSE</td>
+    </tr>
+</table>
+</code></pre>
+<br>
+    <br>
+    <h2>Code CSS</h2>
+    <pre><code data-language="css">
+.separer {
+    Border-Collapse: Separate;
+}
+
+.coller {
+    Border-Collapse: Collapse;
+}
+
+.collapse {
+    width: 200px;
+    height: 50px;
+    border: Solid 3px black;
+    Border-Collapse: Collapse;
+    text-align: center;
+}
+
+.separate {
+    width: 200px;
+    height: 50px;
+    border: Solid 3px black;
+    Border-Collapse: Separate;
+    text-align: center;
+}
+</code></pre>
+</div>
+
+<div class="cslide-slide">
+  <h2>La propriété CONTENT permet de spécifier en CSS un texte ou une image à insérer en tant que contenu</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demo">
+      <p class="content">TEST</p> 
+    </div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<p class="content">TEST</p>
+</code></pre>
+    <br>
+    <br>
+    <h2>Code CSS</h2>
+    <pre><code data-language="css">
+.content {
+    color: black !important;
+}
+
+.content::before {
+    content: "Ceci est un ";
+}
+</code></pre>
+</div>
+         
+<div class="cslide-slide">
+  <h2>La propriété PADDING-LEFT permet de spécifier la marge intérieure gauche</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+<div class="demopl demopl1">
+   PADDING-LEFT de 200px
+</div>
+<div class="demopl demopl2">
+   PADDING-LEFT de 400px
+</div>
+<div class="demopl demopl3">
+   PADDING-LEFT de 600px
+</div>
+    <br>
+    <br>
+    <h2>Code HTML</h2>
+    <pre><code data-language="html">
+<div class="demopl demopl1">
+   PADDING-LEFT de 200px
+</div>
+<div class="demopl demopl2">
+   PADDING-LEFT de 400px
+</div>
+<div class="demopl demopl3">
+   PADDING-LEFT de 600px
+</div>
+</code></pre>
+    <br>
+    <br>
+    <h2>Code CSS</h2>
+    <pre><code data-language="css">
+.demopl {
+    border: solid 1px;
+    width: 100%;
+    background-color: beige;
+}
+.demopl1 {
+    padding-left: 200px;
+}
+.demopl2 {
+    padding-left: 400px;
+}
+.demopl3 {
+    padding-left: 600px;
+}
+</code></pre>
+</div>
+
+
+<div class="cslide-slide">
+    <h2>La propriété LIST-STYLE est un raccourci pour déclarer plusieurs propriétés CSS de type liste en une seule fois</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <pre><code data-language="css">
+ul {
+    list-style: square outside none;
+}
+</code></pre>
+      <br>
+    <br>
+    <h2>Au lieu de</h2>
+     <pre><code data-language="css">
+ul {
+ list-style-type: square;
+ list-style-position: outside;
+ list-style-image: none;
+}
+</code></pre>
+</div>     
+        
+<div class="cslide-slide">
+   <h2>La propriété OBJECT-POSITION détermine l'alignement d'un élément replacé au sein de sa boîte</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+<div class="boite">
+    <img class="position-1" src="img/drapeau.png" />
+</div>
+<div class="boite">
+    <img class="position-2" src="img/drapeau.png" />
+</div>
+<div class="boite">
+    <img class="position-3" src="img/drapeau.png" />
+</div>
+<div class="boite">
+    <img class="position-4" src="img/drapeau.png" />
+</div>
+<br>
+<br>
+<h2>Code HTML</h2>
+<pre><code data-language="html">
+<div class="boite">
+    <img class="position-1" src="img/drapeau.png" />
+</div>
+<div class="boite">
+    <img class="position-2" src="img/drapeau.png" />
+</div>
+<div class="boite">
+    <img class="position-3" src="img/drapeau.png" />
+</div>
+<div class="boite">
+    <img class="position-4" src="img/drapeau.png" />
+</div>
+</code></pre>
+<br>
+<br>
+<h2>Code CSS</h2>
+<pre><code data-language="css">
+img {
+    width: 150px;
+    height: 100px;
+    margin-right: 1em;
+}
+.boite {
+    width: 150px;
+    height: 100px;
+    background-color: beige;
+    display: inline-block;
+    margin-right: 50px;
+}
+.position-1 {
+    object-position: 0px 0px;
+}
+
+.position-2 {
+    object-position: 20px 0px;
+}
+
+.position-3 {
+    object-position: 0px 20px;
+}
+
+.position-4 {
+    object-position: 20px 20px;
+}
+</code></pre>
+</div>    
+
+<div class="cslide-slide">
+   <h2>La propriété BACKGROUND-BLEN-MODE définit la façon dont les images d'arrière-plan doivent être fusionnées entre elles et avec la couleur d'arrière-plan</h2>
+    <br>
+    <br>
+    <h2>Exemple</h2>
+    <div class="demof">
+ <IFRAME SRC="https://mdn.mozillademos.org/en-US/docs/Web/CSS/background-blend-mode$samples/Examples?revision=999647" WIDTH=350 HEIGHT=350>
+                            </IFRAME>
+        </div> 
+<br>
+<br>
+<h2>Code HTML</h2>
+<pre><code data-language="html">
+<div id="blen"></div>
+<select id="select">
+    <option>normal</option>
+    <option>multiply</option>
+    <option selected>screen</option>
+    <option>overlay</option>
+    <option>darken</option>
+    <option>lighten</option>
+    <option>color-dodge</option>
+    <option>color-burn</option>
+    <option>hard-light</option>
+    <option>soft-light</option>
+    <option>difference</option>
+    <option>exclusion</option>
+    <option>hue</option>
+    <option>saturation</option>
+    <option>color</option>
+    <option>luminosity</option>
+</select>
+<script type="text/javascript">
+    document.getElementById("select").onchange = function (event) {
+        document.getElementById("blen").style.backgroundBlendMode = document.getElementById("select").selectedOptions[0].innerHTML;
+    }
+    console.log(document.getElementById('blen'));
+</script>
+</code></pre>
+<br>
+<br>
+<h2>Code CSS</h2>
+<pre><code data-language="css">
+#blen {
+    width: 300px;
+    height: 300px;
+    background: url('https://mdn.mozillademos.org/files/8543/br.png'),url('https://mdn.mozillademos.org/files/8545/tr.png');
+    background-blend-mode: screen;
+}
+</code></pre>
+</div>    
+
+          
+
+<div class="cslide-slide">
+   <h2>La propriété BOX-SHADOW permet de projeter une ombre depuis un élément</h2>
+    <br>
+    <br>
+<div class="shadow shadow-1">
+    10px 10px 5px black
+</div>
+<div class="shadow shadow-2">
+    30px 10px 5px black
+</div>
+<div class="shadow shadow-3">
+    10px 30px 5px black
+</div>
+<div class="shadow shadow-4">
+    10px 10px 20px black
+</div>
+<br>
+<br>
+<h2>Code HTML</h2>
+<pre><code data-language="html">
+<div class="shadow shadow-1">
+    10px 10px 5px black
+</div>
+<div class="shadow shadow-2">
+    30px 10px 5px black
+</div>
+<div class="shadow shadow-3">
+    10px 30px 5px black
+</div>
+<div class="shadow shadow-4">
+    10px 10px 20px black
+</div>
+</code></pre>
+<br>
+<br>
+<h2>Code CSS</h2>
+<pre><code data-language="css">
+.shadow {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    background-color: beige;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.shadow-1 {
+    box-shadow: 10px 10px 5px black;
+}
+
+.shadow-2 {
+    box-shadow: 30px 10px 5px black;
+}
+
+.shadow-3 {
+    box-shadow: 10px 30px 5px black;
+}
+
+.shadow-4 {
+    box-shadow: 10px 10px 20px black;
+}
+</code></pre>
+</div> 
+
+                </div>
+            </section>
+        </div>
+    
+
+
+
+
+
+
+</body>
+
+</html>
